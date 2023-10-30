@@ -20,6 +20,7 @@
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Python](https://www.python.org/)
+- [Flask](https://flask.palletsprojects.com/en/3.0.x/)
 
 ## 💻 Projeto
 
@@ -31,10 +32,12 @@ Faça o clone do repositório e depois execute a aplicação através do termina
 
 ```bash
 $ git clone https://github.com/gustmrg/python-whatsapp-messenger.git
-$ python -m venv env
-$ source env/bin/activate
+$ python -m venv .env
+$ source .env/bin/activate
 $ pip install -r requirements.txt
-$ python src/main.py
+$ export FLASK_APP=app
+$ cd src
+$ flask run
 ```
 
 ## 📄 Licença
